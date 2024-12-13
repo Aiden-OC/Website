@@ -1,35 +1,67 @@
+:root {
+    --primarycolor: #7adfbb;
+    --secondarycolor: #A6ECE0;
+    --bordercolor: #4C8577;
+    --white: #ffffff;
+    --fontcolor: #333; 
+}
 
+.staff-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
 
-.container-contact {
-    width: 90%;
-    max-width: 800px;
-    margin: 10px auto;
+.staff-list ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.staff-list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px; 
+}
+
+.staff-list img {
+    width: 100px; 
+    height: auto; 
+}
+
+.staff-list p {
+    flex: 1; 
+    margin: 0; 
+    font-size: 16px; 
+    color: var(--fontcolor)
+}
+
+/* Staff CSS */
+.links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.link-box {
+    background-color: var(--white);
+    border: 1px solid var(--bordercolor);
     padding: 20px;
-}
-.contact-us {
-    background-color: #A6ECE0;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
-    
+    border-radius: 5px;
 }
-
-.contact-info p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-.contact-info a {
-    color: #2C97B8;
+.link-box a {
     text-decoration: none;
+    font-size: 16px;
+    color: var(--bordercolor);
     font-weight: bold;
 }
-
-.contact-info a:hover {
+.link-box a:hover {
     text-decoration: underline;
 }
-/*Contact Us CSS*/
+/*Links CSS */
 
 table {
     width: 80%;
@@ -42,7 +74,7 @@ table {
 caption {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--fontcolor);
     font-weight: bold;
 }
 
@@ -53,12 +85,12 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--bordercolor);
+    color: var(--white);
 }
 
 td {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 tr:nth-child(even) td {
@@ -77,54 +109,48 @@ td:first-child {
 .image-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto;  
-    gap: 10px; 
+    gap: 10px;  
     justify-items: center; 
+    align-items: center;
 }
 
 
-.image-container img:nth-child(1) {
-    grid-column: span 2; 
-    width: 100%; 
-    height: auto;
-}
-
-
-.image-container img:nth-child(2),
-.image-container img:nth-child(3) {
-    width: 100%; 
-    height: auto;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 1fr;
+.image-container a {
+    background-color: var(--bordercolor);  
+    color: var(--white);  
+    font-size: 1rem;  
+    font-weight: bold;  
+    text-decoration: none;  
+    padding: 20px;  
+    border-radius: 5px; 
     
 }
 
-.top {
-    grid-column: span 2;
+
+
+.image-container img {
+    width: 50%; 
+    height: auto;
 }
 
-.bottom-left, .bottom-right {
-    text-align: center;
-}
+
 
 header {
-    border: 5px solid #4C8577;
+    border: 5px solid var(--bordercolor);
     font-family: 'Courier New', Courier, monospace;
-    background-color: #A6ECE0;
+    background-color: var(--secondarycolor);
     
 }
-.bottom-left img, .bottom-right img {
-    width: 50%;
+
+p a {
+    background-color: #ddd;
 }
+
 /*Index CSS*/
 footer {
-    background-color: #7adfbb;
+    background-color: var(--primarycolor);
     margin: 10px 5px;
-    border: #4C8577 solid 5px;
+    border: var(--bordercolor) solid 5px;
 }
 
 nav ul {
@@ -138,7 +164,7 @@ nav ul li {
     
 }
 a {
-    color: black;
+    color: var(--fontcolor);
     text-decoration: none;
     font-weight: bold;
 }
@@ -152,59 +178,203 @@ header img {
     border-radius: 50%;
 }
 
+
 div {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    background-color: #7adfbb;
+    background-color: var(--primarycolor);
     margin: 10px;
-    border: #4C8577 solid 5px;
+    border: var(--bordercolor) solid 5px;
+    padding: 15px; 
+    align-items: center; 
 }
+
+
 div ul li {
     list-style-type: none;
 }
-div  img {
-    width: 20%;
+
+
+div img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;   
+    display: block;  
+    margin: 0 auto; 
+    border-radius: 8px
 }
+/*General CSS */
+
+
+.Products-div {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.Products-div .product {
+    background-color: var(--primarycolor);
+    border: var(--bordercolor) solid 5px;
+    padding: 15px;
+    width: 30%; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+}
+
+
+.Products-div .product img {
+    width: 80%; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+/* Product CSS */
+
+
 @media screen and (max-width: 768px) {
-        
-        header img {
-            position: relative; 
-            top: 0;
-            right: 0;
-            left: 50%;
-            transform: translateX(-50%); 
-            width: 80px; 
-        }
     
+    header img {
+        position: relative; 
+        top: 0;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        width: 80px; 
+    }
+    
+    
+    header {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    
+    div {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; 
+    }
+    
+    div img {
+        width: 80%; 
+        margin-bottom: 10px; 
+    }
+    
+    
+    ul {
+        display: block;
+        margin-top: 10px;
+    }
         
-        header {
+    
+    footer {
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    /*CSS for Products.html */
+    .Products-div {
+        justify-content: center; 
+        }
+        
+        .Products-div .product {
+            width: 90%;
+            margin-bottom: 20px; 
+        }
+        
+        .Products-div .product img {
+            width: 100%; 
+        }
+        /*End of CSS for Products.html */
+        /* CSS for table on Rates.html */
+        th, td {
             padding: 10px;
-            font-size: 14px;
+            font-size: 14px; 
         }
-    
         
-        div {
-            margin: 5px;
+        
+        table {
+            width: 100%;
+            table-layout: fixed; 
+        }
+        
+        
+        th, td {
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+        
+        
+        thead {
+            font-size: 1.2rem;
+        }
+        
+        tbody tr td {
+            text-align: left;
             padding: 10px;
         }
-    
-        div img {
-            width: 50%; 
-        }
-    
-       
-        ul {
-            display: block;
-            margin-top: 10px;
-        }
-    
+        /* End of CSS for Rates.HTML */
         
-        footer {
-            margin: 5px;
-            padding: 10px;
+    }
+    
+    @media screen and (min-width: 1024px) {
+
+        
+        
+        .About-Us-Main {
+            display: grid;
+            grid-template-areas:
+            "left-top right"
+            "left-bottom right";
+            grid-template-columns: 1fr 2fr; /* Left column is narrower, right column wider */
+            gap: 10px; /* Space between items */
+        }
+        
+        .left-tops {
+            grid-area: left-top;
+        }
+        
+        .left-bottoms {
+            grid-area: left-bottom;
+        }
+        
+        .rights {
+            grid-area: right;
+        }
+        /* About us CSS */
+        .top {
+            grid-column: span 3;
+            grid-row: 1;
+        }
+        
+        .bottom-left, .bottom-right {
             text-align: center;
         }
-        body {
-            font-size: 16px;
+        
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            
         }
-}
+        
+        .bottom-left {
+            grid-column: span 2;
+            grid-row: 2;
+        }
+        
+        .bottom-right {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        /* Index CSS */
+    }
+    

@@ -12,38 +12,101 @@
         <h1>Contact Us</h1>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Index.html">Home</a></li>
                 <li><a href="./About-Us.html">About Us</a></li>
                 <li><a href="./Contact-Us.html">Contact Us</a></li>
                 <li><a href="./Products.html">Products</a></li>
                 <li><a href="./Operating-Hours.html">Operating Hours</a></li>
+                <li><a href="./Links.html">Links</a></li>
+                <li><a href="./Rates.html">Rates per service</a></li>
+                <li><a href="./Staff.html">Staff</a></li>
+                <li><a href="./Testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="container-contact">
-            <section class="contact-us">
-         <h1>Contact Us</h1>
-                <p>We value each and every person who reaches out to us. Your feedback, questions, and suggestions help us improve and serve you better. If you need assistance or simply want to get in touch, don't hesitate to contact us using the information below.</p>
+        <form>
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            
+            
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            
+           
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
     
-                <h2>Get in Touch</h2>
-                <p>We'd love to hear from you!</p>
+            
+            <div>
+                <label>Product Type:</label><br>
+                <input type="radio" id="throne" name="product-type" value="Throne">
+                <label for="throne">Throne</label><br>
+                <input type="radio" id="bean-bag" name="product-type" value="Bean Bag Chair">
+                <label for="bean-bag">Bean Bag Chair</label><br>
+                <input type="radio" id="sofa" name="product-type" value="Sofa">
+                <label for="sofa">Sofa</label>
+            </div>
     
-                <div class="contact-info">
-                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></p>
-                </div>
-            </section>
-        </div>
-             </main>
+            <div>
+                <label>I would like more information on the following:</label><br>
+                <input type="checkbox" id="construction" name="info" value="Construction Methods">
+                <label for="construction">Construction Methods</label><br>
+                <input type="checkbox" id="composition" name="info" value="Composition">
+                <label for="composition">Composition</label><br>
+                <input type="checkbox" id="health" name="info" value="Health Concerns">
+                <label for="health">Health Concerns</label><br>
+                <input type="checkbox" id="environmental" name="info" value="Environmental Impact">
+                <label for="environmental">Environmental Impact</label>
+            </div>
+    
+            
+            <div>
+                <label for="questions">Enter any additional questions that you have:</label><br>
+                <textarea id="questions" name="questions" rows="4" cols="50"></textarea>
+            </div>
+    
+           
+            <div>
+                <label for="source">How did you find out about us?</label><br>
+                <select id="source" name="source">
+                    <optgroup label="Internet">
+                        <option value="Search Engine">Search Engine (e.g. Google, Yahoo)</option>
+                        <option value="Link from another website">Link from another website</option>
+                    </optgroup>
+                    <optgroup label="Non-Internet">
+                        <option value="Referred by a friend">Referred by a friend</option>
+                        <option value="Advertisement">Advertisement</option>
+                        <option value="Flyer/Mailing">Flyer/Mailing</option>
+                    </optgroup>
+                </select>
+            </div>
+    
+           
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form> 
+    </main>
     <footer>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Index.html">Home</a></li>
                 <li><a href="./About-Us.html">About Us</a></li>
                 <li><a href="./Contact-Us.html">Contact Us</a></li>
                 <li><a href="./Products.html">Products</a></li>
                 <li><a href="./Operating-Hours.html">Operating Hours</a></li>
+                <li><a href="./Links.html">Links</a></li>
+                <li><a href="./Rates.html">Rates per service</a></li>
+                <li><a href="./Staff.html">Staff</a></li>
+                <li><a href="./Testimonials.html">Testimonials</a></li>
             </ul>
             <p>&copy; 2024 Sweat Seat Shop. All Rights Reserved.</p>
         </nav>
